@@ -1,0 +1,6 @@
+{
+  "name": "Shidara Cab Service",
+  "description": "Premium 24/7 cab service for city rides, airport transfers, and outstation trips with instant WhatsApp booking to 07575800775.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
