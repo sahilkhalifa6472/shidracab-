@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, MessageCircle, Clock, Star, ExternalLink, ShieldCheck, CheckCircle2, Navigation } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, Clock, ExternalLink, ShieldCheck, CheckCircle2, Navigation } from 'lucide-react';
 import { CONTACT_INFO, SERVICE_AREAS } from '../data/cabData';
 
 export const GoogleBusinessSection: React.FC = () => {
@@ -13,14 +13,11 @@ export const GoogleBusinessSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-800 border border-neutral-700 text-amber-400 text-xs font-bold uppercase tracking-wider mb-3">
-            <span className="flex items-center text-amber-400">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-3.5 h-3.5 fill-amber-400" />
-              ))}
-            </span>
-            <span className="text-white font-extrabold ml-1">4.9 / 5.0</span>
-            <span className="text-neutral-400 font-normal">({CONTACT_INFO.reviewsCount} Verified Google Reviews)</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-neutral-800 border border-neutral-700 text-amber-400 text-xs font-semibold tracking-wide mb-3">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="text-white font-bold">Official Local Dispatch Hub</span>
+            <span className="text-neutral-500">·</span>
+            <span className="text-amber-400 font-medium">Gujarat & All-India</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">

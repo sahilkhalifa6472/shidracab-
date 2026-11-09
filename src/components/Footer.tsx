@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, MessageCircle, Mail, MapPin, Clock, Star, ExternalLink } from 'lucide-react';
+import { Phone, MessageCircle, MapPin, Clock, ExternalLink } from 'lucide-react';
 import { CONTACT_INFO } from '../data/cabData';
 import { PolicyType } from './PolicyModal';
 
@@ -61,21 +61,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
               <span>{CONTACT_INFO.operatingHours}</span>
             </div>
             
-            {/* Google Rating Snippet */}
+            {/* Google Maps Hub Link */}
             <a
               href={CONTACT_INFO.googleMapsQuery}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 p-2 rounded-xl bg-neutral-900 border border-neutral-800 text-xs hover:border-amber-400/50 transition-colors"
+              className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-neutral-900 border border-neutral-800 text-xs text-neutral-300 hover:text-white hover:border-amber-400/50 transition-colors"
             >
-              <span className="flex text-amber-400">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 fill-amber-400" />
-                ))}
-              </span>
-              <span className="font-bold text-white">4.9 / 5.0</span>
-              <span className="text-neutral-400">Google Reviews</span>
-              <ExternalLink className="w-3 h-3 text-neutral-400" />
+              <MapPin className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span>Locate on Google Maps</span>
+              <ExternalLink className="w-3 h-3 text-neutral-500" />
             </a>
           </div>
 
@@ -135,12 +130,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicy }) => {
                 <MessageCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
                 <a href={CONTACT_INFO.whatsappUrlBase} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400">
                   WhatsApp: {CONTACT_INFO.phoneFormatted}
-                </a>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <Mail className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                <a href={`mailto:${CONTACT_INFO.email}`} className="hover:text-white text-xs">
-                  {CONTACT_INFO.email}
                 </a>
               </li>
             </ul>

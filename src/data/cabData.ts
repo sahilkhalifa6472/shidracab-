@@ -10,7 +10,6 @@ export const CONTACT_INFO = {
   whatsappNumber: '917575800775',
   whatsappUrlBase: 'https://wa.me/917575800775',
   operatingHours: 'Open 24 Hours / 7 Days a Week (24/7)',
-  email: '3dillustrationmuseum@gmail.com',
   streetAddress: 'Shidara Cab Dispatch Hub, SG Highway',
   city: 'Ahmedabad',
   state: 'Gujarat',
@@ -18,8 +17,6 @@ export const CONTACT_INFO = {
   country: 'India',
   fullAddress: 'Shidara Cab Dispatch Hub, SG Highway, Ahmedabad, Gujarat 380015, India',
   googleMapsQuery: 'https://www.google.com/maps/search/?api=1&query=Shidara+Cab+Service+Ahmedabad+Gujarat',
-  rating: 4.9,
-  reviewsCount: 284,
 };
 
 export const SERVICE_AREAS = [

@@ -77,7 +77,7 @@ export const PolicyModal: React.FC<PolicyModalProps> = ({ type, onClose }) => {
               </p>
               <h4 className="font-bold text-neutral-900 pt-2">3. Contact Us</h4>
               <p>
-                For privacy inquiries or data removal, please reach out to our administration desk at <a href={`mailto:${CONTACT_INFO.email}`} className="text-amber-600 font-semibold underline">{CONTACT_INFO.email}</a> or call {CONTACT_INFO.phoneDisplay}.
+                For privacy inquiries or booking assistance, please contact our 24/7 dispatch desk via WhatsApp or call {CONTACT_INFO.phoneDisplay}.
               </p>
             </>
           )}
