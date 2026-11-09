@@ -12,6 +12,7 @@ export interface Vehicle {
   features: string[];
   recommendedFor: string;
   badge?: string;
+  imageSrc: string;
 }
 
 export interface BookingFormState {
